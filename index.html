@@ -2,15 +2,48 @@
 <html>
 <head>
 	<title>Protfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="js/materialize.min.js "></script>
+
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
 		body{		background-color: #292929;
     color: #c69c6d;
 		}
+    h4 {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  margin: 0 auto;
+}
+
+/* Animation */
+h4 {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 350px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
 	</style>
 </head>
 
@@ -19,8 +52,8 @@
 <div class="center">
   <div class="container " style="color:#c69c6d; padding-top:10%; padding-bottom: 10%; margin-top: 70px; margin-bottom: 150px;   ">
     <h1  style="font-size: 400%;">Murtaza Saifee</h1>
-    <h4 style="font-size: 200%;">Software Developer</h4>
-    <h3 style="font-size: 150%;" >saifee.mt@gmail.com</h3>
+    <h4 class="ani" ">Software Developer</h4>
+    <h3 style="font-size: 150%;" > <a href="#">saifee.mt@gmail.com </a>  </h3>
   </div>
 
 
@@ -49,7 +82,7 @@
       
         <h3 class="center" style="font-size: 300%;" >About</h3>
           <p><h5 class="justified" style="margin:8%; font-size: 150%;">I have a stronghold over problem-solving, Data structure & Algorithm, OOPs concepts and experience in the
-             field of Machine Learning, with a considerable amount of work with Natural Language Processing (NLP). I have an understanding of the core concepts; 
+             field of Machine Learning, with a considerable amount of work with Natural Language Processing (NLP). <br> I have an understanding of the core concepts; 
              I designed a model for sentiment analysis of IMDB ratings and worked on web scraped corpus to derive ranked based dictionaries for answering free text 
              queries on the data set.
              I may pose as the deserving candidate as being ardent is what I cherish when it comes down to working hard to achieve plausible targets. 
@@ -106,13 +139,19 @@
                     <div class="collapsible-header #292929" style="background-color: #292929;"><i class="material-icons">arrow_downward</i>M.Tech [2020-2021]</div>
                     <div class="collapsible-body"><span> <p>
                       IIT, Kharangpur
-                    </p> </span></div>
+                    </p> 
+                  <p>
+                    Computer Science
+                  </p></span></div>
                   </li>
                   <li>
                     <div class="collapsible-header" style="background-color: #292929;"><i class="material-icons">arrow_downward</i>B.Tech [2015-2019] </div>
                     <div class="collapsible-body"><span><p>
                       IIIT, Pune
-                    </p></span></div>
+                    </p>
+                  <p>
+                    Informtion tech
+                  </p></span></div>
                   </li>
                  
                 </ul>
